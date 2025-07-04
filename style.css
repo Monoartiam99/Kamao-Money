@@ -1,0 +1,104 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+main, header, footer {
+    padding: 20px;
+    box-sizing: border-box; /* Good practice for full-width layouts with padding */
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: #007BFF 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+main {
+    background: #fff;
+    padding: 20px;
+}
+
+article h3 {
+    color: #007BFF;
+}
+
+/* Tip Cards on Homepage */
+.tip-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    min-width: 250px; /* Ensures cards don't get too narrow */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.button {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #666;
+}
