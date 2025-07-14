@@ -1,90 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
-
 header {
-    background-color: #333;
+    background: #333;
+    color: white;
     padding: 10px 0;
 }
-
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+header nav a {
     text-decoration: none;
-    font-weight: bold;
+    margin: 10px;
 }
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
+.download-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 20px;
+    background: purple;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
-.tip-cards {
+.tip-row {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
 }
 
-.card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.tip-row img {
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tip-text {
+    max-width: 500px;
     text-align: center;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 8px;
+/* Arrow Style */
+.arrow {
+    font-size: 40px;
+}
+
+/* Layout Direction */
+.left-image {
+    flex-direction: row;
+}
+
+.right-image {
+    flex-direction: row-reverse;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tip-row {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
 .social-icons a {
     color: white;
     margin: 0 10px;
-    text-decoration: none;
-}
-
-.download-btn {
-    background-color: #DB29FF;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-    display: inline-block;
-    margin: 20px 0;
-}
-
-.download-btn:hover {
-    background-color: #b020cc;
-}
-
-.highlight-heading {
-    color: #DB29FF;
-    margin-top: 50px;
+    font-size: 20px;
 }

@@ -128,3 +128,157 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #a11bc4;
 }
+
+// 14/07/2025 Image update
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Money Tips - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playground.html">Playground</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Kamao Money Officials</h2>
+        <p>Explore our tips and guides on how to increase your income. Whether you're looking to start a side hustle, become a freelancer, or dive into investing, we have something for you.</p>
+
+        <!-- Download Button -->
+        <a href="kamao-money-1.0.2.apk" download class="download-btn">Download Kamao Money 1.0.2</a>
+
+        <section>
+            <h2 class="highlight-heading">How It Works</h2>
+            <div class="tip-cards">
+                <div class="card">
+                    <img src="1.jpg" alt="Sign In UI">
+                    <h3>Sign In</h3>
+                    <p>Returning users can easily log in by entering their email and password. The design is clean and minimal for quick access.</p>
+                </div>
+                <div class="card">
+                    <img src="2.jpg" alt="Sign Up UI">
+                    <h3>Create Account</h3>
+                    <p>New users can create an account by providing their name, phone, email, and password. All fields are user-friendly and secured.</p>
+                </div>
+                <div class="card">
+                    <img src="3.jpg" alt="Home Page UI">
+                    <h3>Explore Dashboard</h3>
+                    <p>Once logged in, users are greeted with a modern dashboard offering Daily Bonus, Scratch Cards, Spin & Win, and more fun earning methods.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Phone: +91-9876543210</p>
+        <p>Email: contact@example.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Earn Money Tips. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+//Css update
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.tip-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.download-btn {
+    background-color: #DB29FF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.download-btn:hover {
+    background-color: #b020cc;
+}
+
+.highlight-heading {
+    color: #DB29FF;
+    margin-top: 50px;
+}
