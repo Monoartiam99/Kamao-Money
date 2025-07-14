@@ -1,11 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('background.jpg') no-repeat center center fixed;
+    background-size: fill;
     text-align: center;
 }
 header {
     background: #333;
-    color: white;
+    color: rgb(248, 245, 245);
     padding: 10px 0;
 }
 header nav ul {
