@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground</title>
     <link rel="stylesheet" href="playground.css">
+
+    <style>
+    #google_translate_element {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 9999;
+      background: white;
+      border-radius: 8px 0 0 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      padding: 8px;
+    }
+
+    .goog-te-gadget {
+      font-size: 0;
+    }
+
+    .goog-te-combo {
+      font-size: 14px;
+    }
+  </style>
+    <script>
+         function loadGoogleTranslate() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+      </script>
+      <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 </head>
 <body>
     <div class="container">
@@ -66,5 +94,6 @@
             </div>
         </div>
     </div>
+    <div id="google_translate_element"></div>
 </body>
 </html>
