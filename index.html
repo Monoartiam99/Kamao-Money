@@ -30,14 +30,11 @@
     }
   </style>
 
-  <script type="text/javascript">
-    function loadGoogleTranslate() {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-        'google_translate_element'
-      );
-    }
-  </script>
+  <script>
+         function loadGoogleTranslate() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+      </script>
   <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 </head>
 
@@ -92,15 +89,24 @@
   </main>
 
   <footer>
-    <p><strong>📞 Phone:</strong> +91-9876543210</p>
-    <p><strong>📧 Email:</strong> contact@example.com</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
+  <p><strong>📞 Phone:</strong> +91-9876543210</p>
+  <p><strong>📧 Email:</strong> contact@example.com</p>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/kamao_money_official?igsh=ZWh2NHZjam1uZ2F6" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com/@kamao_money_official01?si=V9yhSlScLwwTnliE" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://t.me/kamao_money_official" target="_blank">
+      <i class="fab fa-telegram"></i>
+    </a>
     <p>&copy; 2024 Kamao Money. All rights reserved.</p>
-  </footer>
+  </div>
+
+</footer>
+
 
   <!-- Floating Google Translate Widget -->
   <div id="google_translate_element"></div>

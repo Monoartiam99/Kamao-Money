@@ -357,3 +357,11 @@ footer {
 </body>
 <div class="visme_d" data-title="Mailing List Sign Up Form" data-url="nmno9mgm-mailing-list-sign-up-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="136386"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
 </html>
+<script type="text/javascript">
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+      );
+    }
+  </script>
