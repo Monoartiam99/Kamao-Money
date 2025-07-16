@@ -1,62 +1,105 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-    url("background.jpg") no-repeat center center fixed;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f8e1f4, #e1e8f8), url("background.jpg") no-repeat center center fixed;
     background-size: cover;
-    background-blend-mode: lighten;
-    color: #333;
+    background-blend-mode: overlay;
+    color: #222;
+    line-height: 1.6;
 }
 
+/* Container with glassmorphism effect */
 .container {
     max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.301);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    margin: 40px auto;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Fade in on load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #4a148c;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .item {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    background: #ffffff5a;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.015);
+    box-shadow: 0 10px 25px rgba(76, 0, 130, 0.15);
 }
 
 .item img {
     width: 40%;
-    max-width: 300px;
-    border-right: 1px solid #ddd;
+    max-width: 320px;
+    object-fit: cover;
+    border-right: 2px solid #ddd;
 }
 
 .text {
-    padding: 20px;
+    padding: 24px;
+    text-align: left;
 }
 
 .text h2 {
     margin-top: 0;
+    font-size: 1.6rem;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.05rem;
+    color: #444;
 }
 
 @media (max-width: 768px) {
     .item {
         flex-direction: column;
+        margin-bottom: 30px;
     }
 
     .item img {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 2px solid #ccc;
     }
 
     .text {
-        padding: 15px;
+        padding: 18px;
+        text-align: center;
+    }
+
+    .text h2 {
+        font-size: 1.4rem;
     }
 }
