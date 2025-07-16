@@ -6,26 +6,27 @@
     <title>Playground</title>
     <link rel="stylesheet" href="playground.css">
 
-    <style>
+   <style>
     #google_translate_element {
-      position: fixed;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      z-index: 9999;
-      background: white;
-      border-radius: 8px 0 0 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      padding: 8px;
+        margin-top: 10px;
+    }
+
+    footer {
+        background: #000000c1;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
     }
 
     .goog-te-gadget {
-      font-size: 0;
+        font-size: 0;
     }
 
     .goog-te-combo {
-      font-size: 14px;
+        font-size: 14px;
     }
+</style>
+
   </style>
     <script>
          function loadGoogleTranslate() {
@@ -94,6 +95,11 @@
             </div>
         </div>
     </div>
-    <div id="google_translate_element"></div>
+      <footer>
+        <p>&copy; 2024 Kamao Money. All rights reserved.</p>
+
+        <!-- Google Translate Widget inside the footer -->
+        <div id="google_translate_element"></div>
+    </footer>
 </body>
 </html>
