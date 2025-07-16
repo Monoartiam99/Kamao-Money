@@ -282,3 +282,78 @@ footer {
     color: #DB29FF;
     margin-top: 50px;
 }
+
+// 16/07/2025 Before Transalotor update 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamao Money- Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Load Google Translate API -->
+            <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="playground.html">Playground</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to Kamao Money Officials</h2>
+        <p>Explore our tips and guides on how to increase your income. Whether you're looking to start a side hustle, become a freelancer, or dive into investing, we have something for you.</p>
+
+        <a href="kamao-money-1.0.2.apk" download class="download-btn">Download Kamao Money 1.0.2</a>
+
+        <section>
+            <h2 class="highlight-heading">How It Works</h2>
+
+            <div class="tip-row left-image">
+                <img src="1.jpg" alt="Sign In UI">
+                <div class="arrow">➡️</div>
+                <div class="tip-text">
+                    <h3>Sign In</h3>
+                    <p>Returning users can easily log in by entering their email and password. The design is clean and minimal for quick access.</p>
+                </div>
+            </div>
+
+            <div class="tip-row left-image">
+                <div class="tip-text">
+                    <h3>Create Account</h3>
+                    <p>New users can create an account by providing their name, phone, email, and password. All fields are user-friendly and secured.</p>
+                </div>
+                <div class="arrow">➡️</div>
+                <img src="2.jpg" alt="Sign Up UI">
+            </div>
+
+            <div class="tip-row left-image">
+                <img src="3.jpg" alt="Home Page UI">
+                <div class="arrow">➡️</div>
+                <div class="tip-text">
+                    <h3>Explore Dashboard</h3>
+                    <p>Once logged in, users are greeted with a modern dashboard offering Daily Bonus, Scratch Cards, Spin & Win, and more fun earning methods.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Phone: +91-9876543210</p>
+        <p>Email: contact@example.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Earn Money Tips. All rights reserved.</p>
+    </footer>
+</body>
+<div class="visme_d" data-title="Mailing List Sign Up Form" data-url="nmno9mgm-mailing-list-sign-up-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="136386"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+</html>
