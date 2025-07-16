@@ -18,6 +18,26 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     animation: fadeIn 0.8s ease;
 }
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #d946ef;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #a61cb5;
+}
 
 /* Fade in on load */
 @keyframes fadeIn {
