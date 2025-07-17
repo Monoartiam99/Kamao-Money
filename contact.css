@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+   
 }
 
 .form-container {
@@ -24,6 +25,10 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     width: 300px;
     text-align: center;
+    position: absolute;
+    display: inline-block;
+    top: 523px;
+    left: 588px;
 }
 .form-container h2 {
     margin-bottom: 20px;
@@ -83,4 +88,25 @@ body {
 
 .social-icons a:hover {
     color: #4CAF50;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #d946ef;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background: #a61cb5;
 }
