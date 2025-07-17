@@ -152,9 +152,10 @@ h2 {
 
 /* Translate Button */
 #google_translate_element {
-  position: fixed;
-  top: 185px;
-  right: 680px;;
+  position: relative;
+  display: inline-block;
+  top: 50px;
+  right: 0px;;
   transform: translateY(-50%);
   z-index: 9999;
   background: white;
