@@ -19,16 +19,17 @@ body {
     text-align: center;
 }
 .form-container1 {
-    background: rgb(151, 98, 197);
+   background: rgb(151, 98, 197);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     width: 300px;
     text-align: center;
+    margin-top: auto;
     position: absolute;
-    display: inline-block;
-    top: 523px;
-    left: 588px;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Added spacing below .form-container */
 }
 .form-container h2 {
     margin-bottom: 20px;

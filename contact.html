@@ -18,7 +18,7 @@
             <input type="email" name="email" placeholder="Email Address" required>
             <button type="submit">Subscribe</button>
         </form>
-
+</div>
         <div class="form-container1">
             <p>Follow us on social media:</p>
             <div class="social-icons">
@@ -27,29 +27,36 @@
                 <a href="https://www.instagram.com/kamao_money_official?igsh=ZWh2NHZjam1uZ2F6" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </div>
+
 
     <script>
-        document.getElementById("subscribeForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-            const formData = new FormData(this);
+    const formData = {
+        name: this.name.value,
+        phone: this.phone.value,
+        email: this.email.value
+    };
 
-            fetch("https://script.google.com/macros/s/AKfycbwOIeYVZf2KRyUeX2miwG2HniBGAyOj4bsEQj1PTb37AVr5DPPMf0O2GfjhJ1odXvXcUQ/exec", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(result => {
-                alert("Thank you! Visit Kamao Money Official's page.");
-                this.reset();
-            })
-            .catch(error => {
-                alert("Something went wrong.");
-                console.error(error);
-            });
-        });
-    </script>
+    fetch("https://script.google.com/macros/s/AKfycbwaILEVxKUC9rOl0hI64hRzLXu_fiK_kZHtdXsFL3UkBbgo8P9YvwHQB3IrD4Oq3ot4/exec", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.text())
+    .then(result => {
+        alert(result);
+        this.reset();
+    })
+    .catch(error => {
+        alert("Something went wrong: " + error.message);
+        console.error(error);
+    });
+});
+</script>
 
 </body>
 </html>
